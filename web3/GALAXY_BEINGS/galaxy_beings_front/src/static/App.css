@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@media (min-width: 576px) {
+    .block {
+        padding: 120px 1rem;
+    }
+}
+
+.block {
+    position: relative;
+    padding: 60px 30px;
+    color: inherit;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aliens-hero.no-webp {
+    background-image: url(./index_bg.png);
+}
+
+.aliens-hero {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-size: 100% auto;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+.aliens-hero .container {
+    padding-top: 35%;
+    text-align: center;
+    max-width: 1260px;
+    overflow: auto;
+    display: -webkit-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.aliens-hero .menu {
+    background-color: rgba(0, 0, 0, .5);
+    padding-top: 20px;
+    height: min-content;
+    display: flex;
+    width: 100%;
+}
+
+.aliens-hero .menu ul {
+    width: 100%;
+    display: flex;
+}
+
+.aliens-hero a {
+    color: #fff;
+}
+
+.aliens-hero a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.aliens-hero .menu li {
+    width: 33%;
+}
+
+.start-course-btn:active {
+    background: url(./Btn_Register_Normal.png);
+    background-size: 100% 100%;
+}
+
+.start-course-btn:hover {
+    background: url(./Btn_Register_Over.png);
+    background-size: 100% 100%;
+    color: #00ff00;
+    /* 使用鲜艳的绿色，类似于霓虹灯效果 */
+    font-family: 'Orbitron', sans-serif;
+    /* 使用现代、科幻风格的字体，比如 Orbitron */
+    font-size: 16px;
+    /* 调整字体大小，确保可读性 */
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+    /* 轻微放大按钮，增加动态效果 */
+    transition: all 0.3s ease;
+    /* 平滑过渡效果 */
+}
+
+.start-course-btn {
+    cursor: pointer;
+    background: url(./Btn_Register_Normal.png);
+    background-position: top;
+    background-size: 100% 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* font-family: soleil, sans-serif;*/
+    font-size: 18px;
+    /*text-shadow: 0 2px 7px #000;*/
+    /* color: #fff;*/
+    padding: 40px 65px;
+    font-family: 'Orbitron', sans-serif;
+    /* 使用 Roboto 字体 */
+
+    color: #FFFFFF;
+    /* 字体颜色为白色 */
+    font-weight: bold;
+    /* 字体加粗 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* 文本阴影 */
+    letter-spacing: 0.5px;
+    /* 字母间距 */
+    line-height: 1.5;
+    /* 行高 */
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button;
+}
+
+#root {
+    background: url(./walls.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.alien-container {
+    padding-top: 0px;
+}
+
+.alien-container .container {
+    text-align: center;
+    max-width: 1260px;
+}
+
+.alien-container .area {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    height: min-content;
+}
+
+.start-admin-btn:hover {
+    -webkit-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
+    -webkit-filter: brightness(130%);
+    filter: brightness(130%);
+}
+
+.start-admin-btn {
+    cursor: pointer;
+    background: url(./learn_more_btn.png);
+    background-position: 50% 20px;
+    background-size: 90%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    font-family: soleil, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 2px 7px #000;
+    color: #fff;
+    padding: 40px 65px;
+}
+
+.home-card {
+    background-image: url(./homecard@2x.png);
+    background-repeat: no-repeat;
+}
+
+.game-card {
+    height: 42vh;
+    width: 29vh;
+    margin: -1rem;
+    background-size: 100%;
+    position: relative;
+    transform: scale(.8);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.cards {
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+}
+
+.cards a {
+    display: flex !important;
+    color: unset;
+}
+
+.game-card .alien-parts {
+    margin-left: 0vh;
+    margin-top: 38vh;
+    transform: scale(1.5);
+}
+
+.alien-card {
+    position: absolute;
+    left: 50%;
+    top: 51vh;
+    font-size: 40px;
+    width: 48vh;
+    margin-left: -8vh;
+    text-align: center;
+    transform: scale(1);
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.hide-overflow-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, .7) !important;
+}
+
+.game-card[active='1'] {
+    transform: rotate(5deg);
+}
+
+.game-card[active='0'] {
+    transform: rotate(0deg);
+    transform: scale(.8);
+}
+
+.game-card:hover {
+    transform: rotate(5deg);
+}
+
+
+
+.alien-detail {
+    padding-top: 1.5rem !important;
+    position: relative;
+    width: 80%;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-basis: 0px;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-top: 20vh;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.alien-detail dl {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .3) !important;
+    padding: 30px 0px;
+}
+
+.alien-detail dt,
+dd {
+    float: left;
+    padding: 10px 0px;
+}
+
+.alien-detail dt {
+    width: 30%;
+}
+
+.alien-detail dd {
+    width: 70%;
+}
+
+.alien-detail dl>:first-child,
+.alien-detail dl>:last-child {
+
+    width: 100%;
+}
+
+.alien-detail dl>:last-child {
+    margin-top: 30px;
+}
+
+/* .attack-btn:hover {
+    -webkit-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
+    -webkit-filter: brightness(130%);
+    filter: brightness(130%);
+}
+
+.attack-btn {
+    cursor: pointer;
+    background: url(./start_btn.png);
+    background-position: top;
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: soleil, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 2px 7px #000;
+    color: #fff;
+    height: 77px;
+    width: 528px;
+    margin-top: 50px;
+}
+
+.attack-btn span {
+    margin-top: 10px;
+    display: block;
+} */
+.attack-btn {
+    cursor: pointer;
+    background: url(./start_btn.png);
+    background-position: top;
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    /* 更新字体 */
+    font-size: 30px;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    /* 强化文本阴影 */
+    color: #fff;
+    height: 77px;
+    width: 528px;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+.attack-btn span {
+    margin-top: 10px;
+    display: block;
+}
+
+.attack-btn:hover,
+.attack-btn:active {
+    transform: scale(1.05);
+    /* 悬停和点击时轻微放大 */
+    text-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+    /* 改变阴影颜色 */
+}
+
+
+/* .alienInput {
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.alienInput input {
+    width: 300px;
+    line-height: 30px;
+    font-size: 28px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #999;
+} */
+
+/* 输入框基本样式 */
+.alienInput input[type="text"] {
+    width: 50%;
+    /* 宽度 */
+    padding: 12px 15px;
+    /* 内边距 */
+    border-radius: 5px;
+    /* 圆角边框 */
+    border: 2px solid #1e90ff;
+    /* 蓝色边框，给人科技感 */
+    background-color: #000;
+    /* 深色背景 */
+    color: #1e90ff;
+    /* 亮蓝色字体，突出未来感 */
+    font-size: 16px;
+    /* 字体大小 */
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+    /* 发光效果 */
+    transition: all 0.3s ease;
+    /* 平滑过渡效果 */
+    text-align: center;
+}
+
+/* 输入框获取焦点时样式 */
+.alienInput input[type="text"]:focus {
+    outline: none;
+    /* 去除默认外轮廓 */
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
+    /* 更强烈的发光效果 */
+}
+
+/* 占位符样式 */
+.alienInput input[type="text"]::placeholder {
+    color: #5f9ea0;
+    /* 占位符颜色 */
+    font-style: normal;
+    /* 正常字体样式 */
+    font-weight: normal;
+    /* 正常字体重量 */
+    opacity: 0.5;
+    /* 完全不透明 */
+}
+
+/* 针对不同浏览器的占位符样式 */
+.alienInput input[type="text"]:-ms-input-placeholder {
+    color: #5f9ea0;
+}
+
+.alienInput input[type="text"]::-ms-input-placeholder {
+    color: #5f9ea0;
+}
+
+
+button a,
+button a:hover {
+    color: unset !important;
+    text-decoration: none !important;
+    background: none;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.alien-attack .alien-preview {
+    transform: scale(0.1);
+}
+
+.alien-attack .alien-detail {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.target-card {
+    transform: none;
+    background-image: url(./tester-bg@2x.png);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.target-card:hover {
+    transform: none;
+}
+
+.modal {
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    top: 25px;
+    left: 10%;
+    right: 10%;
+    padding: 15px;
+    z-index: 999;
+}
+
+.battelArea {
+    display: flex;
+    min-height: 300px;
+}
+
+.battelArea .targetAlien,
+.battelArea .myAlien {
+    width: 33%;
+    margin-top: -200px;
+    transform: scale(0.5);
+}
+
+.battelArea .myAlien {
+    transform: rotateY(180deg) scale(0.5);
+}
+
+.battelArea .vs {
+    width: 33%;
+    font-size: 100px;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 300px;
+}
+
+.pay-btn:hover {
+    -webkit-transition: all .6s ease 0s;
+    transition: all .6s ease 0s;
+    -webkit-filter: brightness(130%);
+    filter: brightness(130%);
+}
+
+.pay-btn {
+    cursor: pointer;
+    background: url(./learn_more_btn.png);
+    background-position: top;
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-shadow: 0 2px 7px #000;
+    color: #fff;
+    height: 66px;
+    width: 210px;
+    margin-top: 50px;
+}
+
+.pay-btn-last {
+    margin-top: 0px;
+}
+
+.pay-btn span {
+    margin-top: 10px;
+    display: block;
+
+}
+
+.alien-simulator .alien-parts {
+    width: 50%;
+    margin-top: 16vh;
+}
+
+.alien-simulator .alien-preview {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center top;
+}
+
+.transactionHash {
+    display: none;
+}
+
+.transactionHash[display='1'] {
+    display: block;
+}
+
+/* .buyArea[display='0'],
+.createArea[display='0'] {
+    display: none;
+}
+
+.buyArea[display='1'],
+.createArea[display='1'] {
+    display: block;
+}*/
+
+
+
+.contract-admin dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contract-admin dt {
+    width: 30%;
+    padding: 10px 0px;
+}
+
+.contract-admin dd {
+    width: 70%;
+    font-family: auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.contract-admin .pay-btn {
+    height: 40px;
+    width: 105px;
+    font-size: 14px;
+    background-position: 0px 8px;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.contract-admin .pay-btn span {
+    margin-top: 15px;
+}
+
+.lowcase {
+    text-transform: lowercase;
+}
+
+/* AlienArmy 容器样式 */
+.alien-army-container {
+    position: relative;
+    padding-bottom: 50px;
+    /* 留出空间放置分页 */
+}
+
+/* 分页控件样式 */
+.pagination {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+/* 页码样式 */
+.page-numbers {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    /* 确保页码水平排列 */
+}
+
+.page-numbers li {
+    display: inline;
+    margin-right: 8px;
+    /* 增加右边距以分隔页码 */
+    cursor: pointer;
+    padding: 5px 10px;
+    /* 添加边框 */
+    border-radius: 3px;
+    /* 轻微圆角 */
+    /*color: #888;*/
+    /* 文字颜色 */
+    transition: color 0.3s, border-color 0.3s;
+    /* 平滑过渡效果 */
+}
+
+.page-numbers li:hover {
+    color: #555;
+    /* 鼠标悬停时文字颜色变深 */
+    border-color: #555;
+    /* 鼠标悬停时边框颜色变深 */
+}
+
+.page-numbers li.active {
+    color: #333;
+    /* 激活页码的文字颜色 */
+    font-weight: bold;
+    /* 激活页码文字加粗 */
+    border-color: #333;
+    /* 激活页码的边框颜色 */
+}
+
+/* 定位 Connect Wallet 按钮到页面的右上角 */
+.wallet-connect-container {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    /* 确保按钮显示在其他内容之上 */
+}
+
+/* Connect Wallet 按钮的宇宙银河风格 */
+.wallet-connect-btn {
+    background-color: #0b3d91;
+    /* 深空蓝色背景 */
+    color: #d4c2fc;
+    /* 星云般的浅紫色文本 */
+    padding: 10px 20px;
+    border: 1px solid #5a5a8a;
+    /* 星云灰色边框 */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    /* 使用科幻风格的字体 */
+    text-shadow: 0 0 10px #d4c2fc;
+    /* 添加发光效果的文本阴影 */
+    transition: all 0.3s ease;
+    /* 平滑过渡效果 */
+    box-shadow: 0 0 15px #0b3d91;
+    /* 添加外发光效果 */
+}
+
+.wallet-connect-btn:hover {
+    background-color: #1c5fcf;
+    /* 鼠标悬停时的背景颜色变亮 */
+    box-shadow: 0 0 20px #1c5fcf;
+    /* 鼠标悬停时加强发光效果 */
+    transform: scale(1.05);
+    /* 轻微放大按钮，增加动态效果 */
+}
+
+
+
+.wallet-info {
+    background-color: #1e90ff;
+    /* 调整为期望的背景色 */
+    color: white;
+    /* 文本颜色 */
+    padding: 10px 20px;
+    /* 与按钮的内边距相同 */
+    border-radius: 5px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 手型光标 */
+    font-size: 16px;
+    /* 字体大小 */
+    display: flex;
+    /* 弹性盒子布局 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    justify-content: center;
+    /* 水平居中 */
+    text-align: center;
+    /* 文本居中 */
+}
+
+
+.disconnect-icon {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+/* 弹窗背景 */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 弹窗内容 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* 关闭按钮 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 断开连接按钮 */
+.modal-content button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: darkred;
+}
+
+.alien-actions {
+    margin-top: 20px;
+}
+
+.shard-buy-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.shard-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.shard-buy-button,
+.activate-alien-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.shard-buy-button:hover,
+.activate-alien-button:hover {
+    background-color: #45a049;
+}
+
+
+/* .total-points {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(180, 201, 243, 0.211);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-family: 'Orbitron', sans-serif;
+} */
+
+.referral-section {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.total-points,
+.referral-link-button,
+.invite-link-display {
+    background-color: rgba(180, 201, 243, 0.211);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+    /* 确保组件之间有间距 */
+}
+
+.referral-link-button {
+    width: 83%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.referral-link-button:hover {
+    background-color: rgba(180, 201, 243, 0.4);
+}
+
+.invite-link-display {
+    word-break: break-all;
+    /* 确保链接在容器内换行 */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-3%);
+    /* 水平居中 */
+    width: 65%;
+    height: 30%;
+    background-color: rgba(180, 201, 243, 0);
+    padding: 10px 20px;
+    /* 适当的内边距 */
+    border-radius: 5px;
+    /* 圆润的角落 */
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+    transition: bottom 0.5s;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.modal.show {
+    display: flex;
+    /* 激活时显示 */
+    bottom: 10px;
+    opacity: 10;
+    /* 完全不透明 */
+}
+
+.modal-content {
+    background-color: #ced5dd69;
+    /* 蓝色背景 */
+    padding: 15px;
+    color: white;
+    /* 白色文字 */
+    /* 内边距 */
+    border-radius: 10px;
+    /* 圆角 */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    /* 阴影效果 */
+    max-width: 50%;
+    /* 最大宽度 */
+    margin: 10px auto;
+    /* 自动边距实现居中 */
+}
