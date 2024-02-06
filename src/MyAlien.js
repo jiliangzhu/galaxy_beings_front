@@ -20,8 +20,8 @@ class MyAlien extends Component {
  
     extractCodeFromURL() {
         const urlParts = window.location.href.split('/');
-        if (urlParts.length >= 3) {
-            const code = urlParts[2].split('?')[0];
+        if (urlParts.length >= 4) {
+            const code = urlParts[3].split('?')[0];
             console.log("Extracted code:", code); 
             return code;
         }
