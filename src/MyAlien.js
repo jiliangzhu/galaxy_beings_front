@@ -22,7 +22,7 @@ class MyAlien extends Component {
         const urlParts = window.location.href.split('/');
         if (urlParts.length >= 3) {
             const code = urlParts[2].split('?')[0];
-            console.log("invitecode",code)
+            console.log("Extracted code:", code); 
             return code;
         }
         return null; // 如果 URL 格式不正确，则返回 null
