@@ -1,6 +1,7 @@
 {
   "name": "galaxybeings",
   "version": "0.1.0",
+  "homepage": "https://galaxybeings.xyz",
   "private": false,
   "license": "Apache-2.0",
   "dependencies": {

@@ -70,8 +70,12 @@ function App() {
 
     const handleGenerateInviteCode = async () => {
         try {
+            // 获取当前连接的以太坊账户地址
+            const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+            const account = accounts[0];
+    
             // 尝试获取现有的邀请码
-            const existingCode = await MyWeb3.getInviteCode(window.ethereum.selectedAddress || window.defaultAccount);
+            const existingCode = await MyWeb3.getInviteCode(account);
             let code;
             if (existingCode) {
                 code = existingCode;
@@ -81,7 +85,7 @@ function App() {
                 console.log('Transaction Hash:', transactionHash);
                 // 等待链上状态更新
                 await new Promise(resolve => setTimeout(resolve, 10000)); // 延迟时间可以根据需要调整
-                code = await MyWeb3.getInviteCode(window.ethereum.selectedAddress || window.defaultAccount);
+                code = await MyWeb3.getInviteCode(account);
             }
     
             // 生成邀请链接
@@ -104,6 +108,7 @@ function App() {
             console.error('Error generating or fetching invite code:', error);
         }
     };
+    
     
     const calculateTotalPoints = async () => {
         try {
