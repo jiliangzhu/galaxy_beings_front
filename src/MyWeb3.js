@@ -10,7 +10,7 @@ const MyWeb3 ={
             //禁止自动刷新，metamask要求写的
             ethereum.autoRefreshOnNetworkChange = false
             //开始调用metamask
-            ethereum.enable().then(function (accounts) {
+            ethereum.request({ method: 'eth_requestAccounts' }).then(function (accounts) {
                 //初始化provider
                 let provider = window['ethereum'] || window.web3.currentProvider
                 //初始化Web3
