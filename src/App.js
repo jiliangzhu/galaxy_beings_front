@@ -54,8 +54,8 @@ function App() {
                     console.log("chainChanged:" + chainId);
                     // window.location.reload();
                 });
-                ethereum.on('networkChanged', function (networkVersion) {
-                    console.log("networkChanged:" + networkVersion);
+                ethereum.on('chainChanged', function (networkVersion) {
+                    console.log("chainChanged:" + networkVersion);
                     // window.location.reload();
                 });
             } else {
@@ -124,15 +124,23 @@ function App() {
                 points += basePointsPerAlien + levelPoints;
             }
     
-            // 从智能合约获取用户的积分
-            const contractPoints = await MyWeb3.getPoints(window.ethereum.selectedAddress || window.defaultAccount);
-            points += parseInt(contractPoints); // 将合约中的积分加入总积分
+            // 确保ethereum对象存在
+            if (window.ethereum) {
+                // 从智能合约获取用户的积分
+                const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+                const account = accounts[0]; // 获取第一个账户地址
+                const contractPoints = await MyWeb3.getPoints(account || window.defaultAccount);
+                points += parseInt(contractPoints); // 将合约中的积分加入总积分
+            } else {
+                console.error('Ethereum object not found');
+            }
     
             setTotalPoints(points);
         } catch (error) {
             console.error('Error calculating total points:', error);
         }
     };
+    
 
     return (
         <Fragment>
