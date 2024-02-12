@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import AlienCard from "./AlienCard";
 import './static/AlienPreview.css';
 import MyWeb3 from './MyWeb3'
-import { BrowserRouter as Route, Link } from "react-router-dom"
 // eslint-disable-next-line no-unused-vars
 import Page from "./Page";
 
