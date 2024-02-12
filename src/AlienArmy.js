@@ -4,6 +4,7 @@ import './static/AlienPreview.css';
 import MyWeb3 from './MyWeb3'
 // eslint-disable-next-line no-unused-vars
 import { Link } from "react-router-dom"
+// eslint-disable-next-line
 import Page from "./Page";
 
 class AlienArmy extends Component {
