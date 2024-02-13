@@ -14,7 +14,7 @@ class AlienArmy extends Component {
             aliens: [],
             totalAliens: 0,  // 总外星人数
             currentPage: 1,
-            aliensPerPage: 30 // 每页显示30个外星人
+            aliensPerPage: 1 // 每页显示30个外星人
         };
     }
     
@@ -84,14 +84,26 @@ class AlienArmy extends Component {
             );
         });
 
+        const totalAliens = this.state.totalAliens;
+        const aliensPerPage = this.state.aliensPerPage;
+        const lastPage = Math.ceil(totalAliens / aliensPerPage);
+
         const pageNumbers = [];
-        for (let i = 1; i <= Math.ceil(this.state.totalAliens / this.state.aliensPerPage); i++) {
+        for (let i = 1; i <= Math.min(6, lastPage); i++) {
             pageNumbers.push(i);
+        }
+    
+        // 如果总页数大于6，添加省略符号和最后一页的页码
+        if (lastPage > 6) {
+            pageNumbers.push('...');
+            pageNumbers.push(lastPage);
         }
 
         const renderPageNumbers = pageNumbers.map(number => {
-            return (
-                <li key={number} id={number} onClick={this.handleClick}>
+            return number === '...' ? (
+                <li key={number} className="dots">{number}</li>
+            ) : (
+                <li key={number} id={number} onClick={this.handleClick} className={this.state.currentPage === number ? 'active' : ''}>
                     {number}
                 </li>
             );
