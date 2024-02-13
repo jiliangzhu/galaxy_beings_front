@@ -14,7 +14,7 @@ class AlienArmy extends Component {
             aliens: [],
             totalAliens: 0,  // 总外星人数
             currentPage: 1,
-            aliensPerPage: 20 // 每页显示30个外星人
+            aliensPerPage: 16 // 每页显示30个外星人
         };
     }
     
