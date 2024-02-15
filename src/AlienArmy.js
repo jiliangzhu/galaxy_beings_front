@@ -14,7 +14,7 @@ class AlienArmy extends Component {
             aliens: [],
             totalAliens: 0,  // 总外星人数
             currentPage: 1,
-            aliensPerPage: 16 // 每页显示30个外星人
+            aliensPerPage: 16 // 每页显示16个外星人
         };
     }
     
@@ -87,23 +87,42 @@ class AlienArmy extends Component {
         const totalAliens = this.state.totalAliens;
         const aliensPerPage = this.state.aliensPerPage;
         const lastPage = Math.ceil(totalAliens / aliensPerPage);
-
+        const currentPage = this.state.currentPage;
         const pageNumbers = [];
-        for (let i = 1; i <= Math.min(6, lastPage); i++) {
+    
+        // 确保第一页总是显示
+        pageNumbers.push(1);
+    
+        // 计算要显示的页码范围
+        const startPage = Math.max(2, currentPage - 2);
+        const endPage = Math.min(lastPage - 1, currentPage + 2);
+    
+        // 如果startPage大于2，则在第一页后添加省略号
+        if (startPage > 2) {
+            pageNumbers.push('...');
+        }
+    
+        // 添加当前页码的前后页码
+        for (let i = startPage; i <= endPage; i++) {
             pageNumbers.push(i);
         }
     
-        // 如果总页数大于6，添加省略符号和最后一页的页码
-        if (lastPage > 6) {
+        // 如果endPage小于lastPage - 1，则在最后一页前添加省略号
+        if (endPage < lastPage - 1) {
             pageNumbers.push('...');
+        }
+    
+        // 确保最后一页总是显示
+        if (lastPage !== 1) {
             pageNumbers.push(lastPage);
         }
-
+    
+        // 渲染页码
         const renderPageNumbers = pageNumbers.map(number => {
             return number === '...' ? (
                 <li key={number} className="dots">{number}</li>
             ) : (
-                <li key={number} id={number} onClick={this.handleClick} className={this.state.currentPage === number ? 'active' : ''}>
+                <li key={number} id={number} onClick={this.handleClick} className={currentPage === number ? 'active' : ''}>
                     {number}
                 </li>
             );
