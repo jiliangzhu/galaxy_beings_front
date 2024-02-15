@@ -1,199 +1,3 @@
-.alien-parts-bin-component {
-  min-height: 100%;
-}
-
-.alien-preview {
-  height: 84vh;
-  width: 47vh;
-  background-size: cover;
-  background-image: url(./tester-bg@2x.png)
-}
-
-.alien-detail {
-  margin-top: 10px;
-  /* Adjust value as needed */
-  /* Other styles */
-}
-
-.alien-char {
-  position: relative;
-}
-
-.alien-parts {
-  position: relative;
-  margin-left: -2vh;
-  margin-top: 31vh;
-}
-
-.alien-loading {
-  background: url(./alienrun.png) 0;
-  background-size: cover;
-  height: 287px;
-  width: 192px;
-  position: absolute;
-  left: 16vh;
-  animation: play-data-v-3614808b .7s steps(24) infinite;
-}
-
-@keyframes play-data-v-3614808b {
-  to {
-    background-position: -4608px
-  }
-}
-
-.alien-parts {
-  position: relative;
-  margin-left: -2vh;
-  margin-top: 31vh
-}
-
-.alien-parts .head {
-  width: 28vh;
-  position: absolute;
-  left: 13vh;
-  top: -4vh
-}
-
-.alien-parts .eye {
-  width: 13vh;
-  position: absolute;
-  left: 23vh;
-  top: 8vh;
-}
-
-.alien-parts .shirt {
-  width: 13vh;
-  position: absolute;
-  left: 15.6vh;
-  top: 13vh
-}
-
-.mouth {
-  width: 6vh;
-  position: absolute;
-  left: 26.6vh;
-  top: 15vh
-}
-
-.torso {
-  width: 13vh;
-  position: absolute;
-  left: 15.6vh;
-  top: 13vh
-}
-
-.left-thigh {
-  width: 6vh;
-  position: absolute;
-  left: 17.3vh;
-  top: 22vh
-}
-
-.right-thigh {
-  width: 6vh;
-  position: absolute;
-  left: 20.4vh;
-  top: 22vh
-}
-
-.cat-legs {
-  width: 10vh;
-  position: absolute;
-  left: 15.4vh;
-  top: 18vh
-}
-
-.left-hand {
-  width: 4vh;
-  position: absolute;
-  left: 24.3vh;
-  top: 19vh
-}
-
-.right-hand {
-  width: 4vh;
-  position: absolute;
-  left: 28.4vh;
-  top: 19vh
-}
-
-.left-forearm {
-  width: 4vh;
-  position: absolute;
-  left: 22.3vh;
-  top: 20vh
-}
-
-.right-forearm {
-  width: 4vh;
-  position: absolute;
-  left: 26.4vh;
-  top: 20vh
-}
-
-.left-upper-arm {
-  width: 6vh;
-  position: absolute;
-  left: 19.3vh;
-  top: 16vh
-}
-
-.right-upper-arm {
-  width: 6vh;
-  position: absolute;
-  left: 23.4vh;
-  top: 16vh
-}
-
-.left-leg {
-  width: 4vh;
-  position: absolute;
-  left: 18.3vh;
-  top: 27vh
-}
-
-.right-leg {
-  width: 3.3vh;
-  position: absolute;
-  left: 22.3vh;
-  top: 27.6vh
-}
-
-.left-feet {
-  width: 4vh;
-  position: absolute;
-  left: 18.3vh;
-  top: 30vh
-}
-
-.right-feet {
-  width: 3.3vh;
-  position: absolute;
-  left: 22.3vh;
-  top: 30.3vh
-}
-
-.alien-name {
-  text-transform: uppercase;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, .2)
-}
-
-
-.alien-name {
-  font-weight: 700
-}
-
-.home-card .alien-char {
-  left: -6vh;
-  top: -27vh;
-  transform: scale(0.4);
-}
-
-
-.card[data-v-ab64d37c] .card-header {
-  background: transparent;
-}
-
 input[type="range"] {
   width: 100%;
 }
@@ -686,50 +490,6 @@ h5 {
   visibility: hidden;
 }
 
-.alien-preview {
-  position: relative;
-}
-
-.share-page .name-input {
-  background-color: rgb(255, 255, 255);
-  color: rgb(51, 51, 51);
-  max-width: 500px;
-}
-
-.alien-parts .eye,
-.alien-parts .head,
-.alien-parts .shirt {
-  display: none;
-}
-
-.alien-parts.eye-visible-1 .eye-part-1,
-.alien-parts.eye-visible-2 .eye-part-2,
-.alien-parts.eye-visible-3 .eye-part-3,
-.alien-parts.eye-visible-4 .eye-part-4,
-.alien-parts.eye-visible-5 .eye-part-5,
-.alien-parts.eye-visible-6 .eye-part-6,
-.alien-parts.eye-visible-7 .eye-part-7,
-.alien-parts.eye-visible-8 .eye-part-8,
-.alien-parts.eye-visible-9 .eye-part-9,
-.alien-parts.eye-visible-10 .eye-part-10,
-.alien-parts.eye-visible-11 .eye-part-11,
-.alien-parts.head-visible-1 .head-part-1,
-.alien-parts.head-visible-2 .head-part-2,
-.alien-parts.head-visible-3 .head-part-3,
-.alien-parts.head-visible-4 .head-part-4,
-.alien-parts.head-visible-5 .head-part-5,
-.alien-parts.head-visible-6 .head-part-6,
-.alien-parts.head-visible-7 .head-part-7,
-.alien-parts.head-visible-8 .head-part-8,
-.alien-parts.shirt-visible-1 .shirt-part-1,
-.alien-parts.shirt-visible-2 .shirt-part-2,
-.alien-parts.shirt-visible-3 .shirt-part-3,
-.alien-parts.shirt-visible-4 .shirt-part-4,
-.alien-parts.shirt-visible-5 .shirt-part-5,
-.alien-parts.shirt-visible-6 .shirt-part-6 {
-  display: inherit;
-}
-
 .head-part-8 {
   z-index: 9;
 }
@@ -804,4 +564,135 @@ h5 {
 .shard-buy-button:hover,
 .activate-alien-button:hover {
   background-color: #45a049;
+}
+
+.alien-parts-bin-component {
+  min-height: 100%;
+}
+
+.alien-preview {
+  height: 84vh;
+  width: 47vh;
+  background-size: cover;
+  background-image: url(./tester-bg@2x1.png)
+}
+
+.alien-char {
+  position: relative;
+}
+
+.alien-parts {
+  position: relative;
+  margin-left: 13vh;
+  margin-top: 50vh;
+}
+
+.home-card {
+  position: relative;
+  /* 确保有足够的空间显示外星人 */
+  height: 500px;
+  /* 根据需要调整 */
+  width: 300px;
+  /* 根据需要调整 */
+  /* 其他样式 */
+}
+
+.home-card .alien-char {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  /* 根据外星人图片的实际大小调整 */
+  /* 可能需要根据图片实际情况调整 z-index */
+}
+
+.alien-parts {
+  position: relative;
+  height: 100%;
+  /* 根据实际图像大小调整 */
+  width: 100%;
+  /* 根据实际图像大小调整 */
+}
+
+.alien-parts img {
+  position: absolute;
+  display: none;
+}
+
+.alien-parts .head {
+  display: block;
+  /* 其他样式 */
+}
+
+.alien-parts .face {
+  display: block;
+  /* 其他样式 */
+}
+
+/* 根据类名显示相应部分的图片 */
+.body-visible-1 .body-part-1,
+.body-visible-2 .body-part-2,
+.body-visible-3 .body-part-3,
+.feet-visible-1 .feet-part-1,
+.feet-visible-2 .feet-part-2,
+.feet-visible-3 .feet-part-3,
+.gun-visible-1 .gun-part-1,
+.gun-visible-2 .gun-part-2,
+.gun-visible-3 .gun-part-3 {
+  display: block;
+}
+
+/* 调整每个部分的位置 */
+.head,
+.body,
+.feet,
+.gun,
+.face {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.head {
+  width: 25vh;
+  /* 根据需要调整 */
+  top: -30vh;
+  /* 调整以适应实际情况 */
+  left: 10vh;
+  transform: translateX(-50%);
+}
+
+.face {
+  width: 25vh;
+  /* 根据需要调整 */
+  top: -30vh;
+  /* 调整以适应实际情况 */
+  left: 10vh;
+  transform: translateX(-50%);
+}
+
+.body {
+  width: 25vh;
+  position: absolute;
+  left: 10vh;
+  top: -30vh
+}
+
+.feet {
+  width: 25vh;
+  position: absolute;
+  left: 10vh;
+  top: -30vh
+}
+
+.gun {
+  width: 25vh;
+  position: absolute;
+  left: 10vh;
+  top: -30vh
+}
+
+.home-card .alien-char {
+  left: 9vh;
+  top: -0vh;
+  transform: scale(0.4);
 }

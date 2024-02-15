@@ -181,11 +181,11 @@ function App() {
                                         <span><Link to="?AlienMarket">MARKET</Link></span>
                                     </button>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <button className="start-course-btn">
                                         <span><Link to="?AlienSimulator">SIMULATOR</Link></span>
                                     </button>
-                                </li>
+                                </li> */}
                                 {adminAreaComponent}
                             </ul>
                         </div>
