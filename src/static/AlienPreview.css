@@ -692,7 +692,7 @@ h5 {
 }
 
 .home-card .alien-char {
-  left: 12vh;
-  top: 3vh;
+  left: 9vh;
+  top: 0vh;
   transform: scale(0.4);
 }
