@@ -642,7 +642,7 @@ h5 {
   display: block;
 }
 
-/* 调整每个部分的位置 */
+
 .head,
 .body,
 .feet,
@@ -654,18 +654,18 @@ h5 {
 
 .head {
   width: 25vh;
-  /* 根据需要调整 */
+
   top: -30vh;
-  /* 调整以适应实际情况 */
+
   left: 10vh;
   transform: translateX(-50%);
 }
 
 .face {
   width: 25vh;
-  /* 根据需要调整 */
+
   top: -30vh;
-  /* 调整以适应实际情况 */
+
   left: 10vh;
   transform: translateX(-50%);
 }
@@ -693,7 +693,7 @@ h5 {
 
 .home-card .alien-char {
   position: absolute;
-  left: 30%;
+  left: 33.7%;
   top: 35%;
   transform: translate(-50%, -50%) scale(0.4);
 }
