@@ -270,16 +270,16 @@ html [type=button] {
 
 
 .alien-detail {
-    padding-top: 1.5rem !important;
+    padding-top: 1.5 rem !important;
     position: relative;
-    width: 80%;
+    width: 100%;
     min-height: 1px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 50px;
     flex-basis: 0px;
     flex-grow: 1;
-    max-width: 100%;
-    margin-top: 20vh;
+    max-width: 80%;
+    margin-top: 2vh;
     font-family: 'Orbitron', sans-serif;
 }
 
